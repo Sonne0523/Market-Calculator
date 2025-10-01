@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Price Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top App Bar -->
+  <header class="app-bar">
+    <h1>Price Calculator</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <form onsubmit="event.preventDefault(); calculatePrice();">
+      <label for="kgPrice">Price per 1 Kg (₹):</label>
+      <input type="number" id="kgPrice" placeholder="Enter kg price" required />
+
+      <label for="weight">Weight (grams):</label>
+      <input type="number" id="weight" placeholder="Enter weight in grams" required />
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div class="result" id="result">Enter kg price and weight above</div>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
