@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Price Calculator</title>
+  <title>Fruit Price Calculator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Top App Bar -->
   <header class="app-bar">
-    <h1>Price Calculator</h1>
+    <h1>Fruit Price Calculator</h1>
   </header>
 
   <!-- Main Content -->
@@ -21,7 +21,10 @@
       <label for="weight">Weight (grams):</label>
       <input type="number" id="weight" placeholder="Enter weight in grams" required />
 
-      <button type="submit">Calculate</button>
+      <div class="button-group">
+        <button type="submit">Calculate</button>
+        <button type="button" onclick="resetCalculator()">Reset</button>
+      </div>
     </form>
 
     <div class="result" id="result">Enter kg price and weight above</div>
