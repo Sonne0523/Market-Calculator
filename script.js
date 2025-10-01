@@ -1,3 +1,8 @@
+document.getElementById("calculatorForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  calculatePrice();
+});
+
 function calculatePrice() {
   let kgPrice = document.getElementById("kgPrice").value;
   let weight = document.getElementById("weight").value;
