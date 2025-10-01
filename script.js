@@ -11,3 +11,9 @@ function calculatePrice() {
   document.getElementById("result").innerText =
     `Price for ${weight} g: ₹${price.toFixed(2)}`;
 }
+
+function resetCalculator() {
+  document.getElementById("kgPrice").value = "";
+  document.getElementById("weight").value = "";
+  document.getElementById("result").innerText = "Enter kg price and weight above";
+}
